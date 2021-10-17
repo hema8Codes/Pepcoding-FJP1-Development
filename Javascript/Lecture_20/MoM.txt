@@ -1,0 +1,38 @@
+Class start at 8:00
+Navdeep on queries till 8:30
+Class from 8:30 to 10:00 [Dev, 1st class]
+
+-> Dev only for next 6 days, from 8 pm to 10 pm
+-> First freelancing opportunity, on 7th and 8th day
+-> Dev and DS together from 9th day 
+    -> Dev = 9 to 10:30
+    -> DS = 10:30 to 12:00
+
+Philosophy
+-> Learning via doing => Activity first, theory later
+-> Interview questions separately
+-> Structured and Unstructured
+
+0. Course Structure
+    0.1 JavaScript, the language = Automation, Web Scrapping, Web Automation
+    0.2 Vanilla Frontend = HTML, CSS, JS in browser (BOM/DOM APIs)
+    0.3 Vanilla Backend = NodeJS and SQL
+    0.4 Frontend with React
+    0.5 Backend in MERN 
+        0.5.1 Payment Gateway
+        0.5.2 Authentication
+        0.5.3 Authorization
+        0.5.4 SMS
+        0.5.5 Email
+1. Download NodeJS
+2. Install NodeJS
+3. Getting Started
+    3.1 Output
+    3.2 variables
+    3.3 Input
+    3.4 if-else
+    3.5 loops
+    3.6 IsPrime
+    3.7 First Function
+    3.8 First Array
+

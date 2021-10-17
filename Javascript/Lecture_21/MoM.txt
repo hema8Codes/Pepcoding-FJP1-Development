@@ -1,0 +1,58 @@
+Class start at 9:00
+Dev class = 9:00 to 10:30
+DS class = 10:30 to 12:00 (Will be redoing Functions and Arrays)
+First freelancing opportunity on 29th and 30th September
+
+Dev Philosophy
+-> Two types of learning
+    -> Structured (We learn and then try to do something with what we know). 3 types of classes
+        -> Facts class = We will focus on learning the least bit that is requied to eventually build stuff. The focus is on facts but not complete coverage.
+        -> Activity class = The aim is to simulate working in a job. The focus is more on getting things done rather than knowing stuff for interviews. It will increase your project creation ability but will not prepare you for interviews because not every aspect will be covered.
+        -> Interview class = The focus is on what will be asked in interviews. Theory coverage. Corner cases coverage.
+    -> Unstructured (We have to do a job, what is required to learn will be learnt)
+        -> Freelancing opportunity via a hackathon
+        -> A lecture for pre-requisites (alongwith necessary resources required to do the project)
+        -> Hackathon without doubt support (Student has to find things and do things, no spoon-feeding)
+        -> Winner takes home
+            -> Money, 
+            -> Internship opportunity, 
+            -> Learning, 
+            -> Project, 
+            -> Project ideas of other competitors
+            -> A stronger profile because you have to submit video with hackathon
+        -> All contestants take 
+            -> Learning, 
+            -> Project, 
+            -> Project ideas of other competitors
+            -> A stronger profile because you have to submit video with hackathon
+
+1. Facts 
+    1.1 First experience with functions = done
+    1.2 First experience with arrays = done
+    1.3 First experience with dependencies (external module) = done
+    1.4 First experience with file manipulation = done
+    1.5 First experience with callbacks
+    1.6 First experience with timers
+    1.7 First experience with downloading data from web
+    1.8 First experience with processing data from web
+    1.9 First experience with writing data in excel file
+    1.10 First experience at writing pdfs
+2. Activity 
+    2.1 Read data from a source : cricinfo worldcup 2019
+    2.2 Process data : Get all teams
+    2.3 Write processed data in excel : Match results per team in their own sheet
+    2.4 Create Folders : One for each team
+    2.5 Write Files : PDF file for scorecard of each match in relevant folder
+3. DS
+    3.1 Pattern 13 = done
+    3.2 Pattern 15 = done
+    3.3 Pattern 16 = done
+    3.4 Pattern 19 = nhw
+    3.5 Pattern 20 = nhw
+    3.6 Introduction to Fns = done
+    3.7 Count Digits = done
+  
+
+
+
+

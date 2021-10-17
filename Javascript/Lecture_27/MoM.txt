@@ -1,0 +1,50 @@
+
+Don't concern yourself with understanding every word as of now. Concern yourself with getting familiar with new words.
+In facts class and In activity class => Understanding is equal getting familiar with new words.
+In interview class we will pick words we have recently became familiar with and meditate around them, understand them deeply.
+
+Facts class (Introduction to new words via small demos) -> 
+    -> Activity class (Practice is going to make you experienced wth using recently discovered still-new words and you are going to get a project) -> 
+        -> Interview class (Understanding recently discovered words so that we can answer question around our projects) 
+        We have a project and we can answer satisfactorily to questions around the project.
+
+
+1. Facts 
+    1.1 First experience with functions = taught
+    1.2 First experience with arrays = taught
+    1.3 First experience with module = taught
+    1.4 First experience with file manipulation = taught
+    1.5 Create a big file = taught
+    1.6 First experience with lack of callback = taught
+    1.7 First experience with callbacks = taught
+    1.8 First experience with downloading data from web = taught
+    1.9 First experience with processing data from web = taught
+    1.10 First experience with writing JSON = taught 
+    1.11 First experience with reading JSON = taught
+    1.12 First experience with array manipulation using callbacks = done
+    1.13 First experience with writing data in excel file = done
+    1.14 First experience at creating folders = done
+    1.15 First experience at writing pdfs =
+2. Activity 
+    2.1 Read data from a source : cricinfo worldcup 2019 (axios)
+    2.2 Process data : Get all teams (jsdom)
+    2.3 Write processed data in excel : Match results per team in their own sheet (excel4node)
+    2.4 Create Folders : One for each team (fs)
+    2.5 Write Files : PDF file for scorecard of each match in relevant folder (?)
+3. DS
+    3.1 Fi and Li = taught
+    3.2 Broken Economy = taught
+    3.3 Rotate = taught
+    3.4 Difference of two arrays = taught
+    3.5 Any base Subtraction = taught
+    3.6 Subsets = test
+    3.7 Any base multiplication = test
+    3.8 Any base division = test
+
+
+
+  
+
+
+
+

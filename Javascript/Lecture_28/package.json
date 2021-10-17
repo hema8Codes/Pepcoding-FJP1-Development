@@ -1,0 +1,15 @@
+{
+  "name": "lecture-28",
+  "version": "1.0.0",
+  "description": "",
+  "main": "FirstExcelFile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "excel4node": "^1.7.2",
+    "minimist": "^1.2.5"
+  }
+}
