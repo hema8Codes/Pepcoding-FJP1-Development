@@ -5,8 +5,8 @@
 // npm install puppeteer-core
 
 let minimist = require("minimist");
-let fs = require("fs");
 let puppeteer = require("puppeteer");
+let fs = require("fs");
 
 let args = minimist(process.argv);
 // console.log(args.url);
@@ -18,7 +18,7 @@ let configJSO = JSON.parse(configJSON);
 // console.log(configJSO.password);
 // console.log(configJSO.moderator);
 
-//By Promise method
+// ####  ---By Promise method ----#####
 
 //   let browserKaPromise = puppeteer.launch({headless: false});
 //   browserKaPromise.then(function(browser){
@@ -41,7 +41,7 @@ let configJSO = JSON.parse(configJSON);
 
 // we can write await only in that function that contains async in front of it
 
-//By Async Await Method
+//####  ---By Async Await Method  ----#####
 
 // (async () => {
 //   let browser = await puppeteer.launch({headless: false});
@@ -85,7 +85,7 @@ async function run(){
     await page.waitForSelector("input[name='password']");
     await page.type("input[name='password']", configJSO.password, {delay: 28});
     
-    // press click on page3 
+    // press click on login3 page3 
     await page.waitForSelector("button[data-analytics='LoginPassword']");
     await page.click("button[data-analytics='LoginPassword']");
     
@@ -93,58 +93,60 @@ async function run(){
     await page.waitForSelector("a[data-analytics='NavBarContests']");
     await page.click("a[data-analytics='NavBarContests']");
     
-    // click on manage contest
+    // click on manage contests
     await page.waitForSelector("a[href='/administration/contests/']");
     await page.click("a[href='/administration/contests/']");
 
     // find number of pages
-    // await page.waitForSelector("a[data-attr1='Last']");
-    // let numPages = await page.$eval("a[data-attr1='Last']", function(atag){ // $eval() - > gives specific
-    //     let totpages = parseInt(atag.getAttribute("data-page"));
-    //     return totpages;
-    // })
+    await page.waitForSelector("a[data-attr1='Last']");
+    let numPages = await page.$eval("a[data-attr1='Last']", function(lastTag){ // $eval() - > gives specific -> first one
+        let totpages = parseInt(lastTag.getAttribute("data-page"));
+        return totpages;
+    })
 
-    // console.log(numPages);
+    console.log(numPages);
 
-    for(let i = 1; i <= 1; i++){
+    // move through all pages
+    for(let i = 1; i <= numPages; i++){
       await handleAllContestsOfAPage(page, browser);
-       
-    //   if(i != numPages){  
-        await page.waitForSelector("a[data-attr1='Right']");
-        await page.click("a[data-attr1='Right']");
-    //   }  
-
     }
 
 }
 
 async function handleAllContestsOfAPage(page, browser){
+    //do some code
     // find all urls of same page
     await page.waitForSelector("a.backbone.block-center");
-    let curls = await page.$$eval("a.backbone.block-center", function(atags){  //  $$eval() - > gives array
-         let urls = [];
+    // contest outer urls
+    let courls = await page.$$eval("a.backbone.block-center", function(atags){  //  $$eval() - > gives array
+         let iurls = [];
 
          for(let i = 0; i < atags.length; i++){
              let url = atags[i].getAttribute("href");
-             urls.push(url);
+             //inner urls
+             iurls.push(url);
          }
 
-         return urls;
+         return iurls;
     });
     
 
-    for(let i = 0; i < curls.length; i++){
-        let curl = curls[i];
+    for(let i = 0; i < courls.length; i++){
+        let curl = courls[i];
 
         let ctab = await browser.newPage();
-        await SaveModeratorInContest(ctab, args.url + curl, configJSO.moderator)
+        await SaveModeratorInContest(ctab, args.url + curl, configJSO.moderators)
         await ctab.close();
         await page.waitFor(3000);
 
     }
+    //move to next page
+    await page.waitFor(1500);
+    await page.waitForSelector("a[data-attr1='Right']");
+    await page.click("a[data-attr1='Right']");
 }
 
-async function SaveModeratorInContest(ctab, fullCurl, moderator){
+async function SaveModeratorInContest(ctab, fullCurl, moderators){
     await ctab.bringToFront();
     await ctab.goto(fullCurl);
     await ctab.waitFor(3000);
@@ -152,47 +154,20 @@ async function SaveModeratorInContest(ctab, fullCurl, moderator){
     // click on moderators tab
     await ctab.waitForSelector("li[data-tab='moderators']");
     await ctab.click("li[data-tab='moderators']");
+    for(let i = 0; i < moderators.length; i++){
+        let moderator = moderators[i];
+            // type in moderator
+        await ctab.waitForSelector("input#moderator");
+        await ctab.type("input#moderator", moderator, {delay: 50});
 
-    // type in moderator
-    await ctab.waitForSelector("input#moderator");
-    await ctab.type("input#moderator", moderator, {delay: 50});
+        await ctab.waitFor(700);
+            // press enter
+        await ctab.keyboard.press("Enter");
+        await ctab.waitFor(700);
+    }
 
-    // press enter
-    await ctab.keyboard.press("Enter");
 }
 
 run();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-    // // click on first contest
-    // await page.waitForSelector("p.mmT");
-    // await page.click("p.mmT");
-    
-    // await page.waitFor(3000);
-    
-    // // click on moderators tab
-    // await page.waitForSelector("li[data-tab='moderators']");
-    // await page.click("li[data-tab='moderators']");
-
-    // // type in moderator
-    // await page.waitForSelector("input#moderator");
-    // await page.type("input#moderator", configJSO.moderator, {delay: 50});
-
-    // await page.keyboard.press("Enter");

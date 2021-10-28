@@ -1,6 +1,11 @@
 {
     "userid" : "pandey8hema@gmail.com",
     "password" : "helium",
-    "moderator" : "navdeep_usict"
+    "moderators" : [
+        "navdeep_usict",
+        "developer8hema",
+        "lidaji7424",
+        "Hemakshi_Pandey"
+    ]
     
 }
