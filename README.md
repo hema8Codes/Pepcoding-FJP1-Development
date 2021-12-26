@@ -4,6 +4,8 @@
 
 Topics Indexing
 
+__JAVASCRIPT__
+
 Lecture No.   | Topic
 ------------- | -------------
 Lecture_20    | Content Cell
