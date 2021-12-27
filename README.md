@@ -4,7 +4,10 @@
 
 Topics Indexing
 
-__JAVASCRIPT__
+```diff
+- __JAVASCRIPT__
+```
+
 
 Lecture No.   | Topic
 ------------- | -------------
