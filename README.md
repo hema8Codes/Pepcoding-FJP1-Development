@@ -5,7 +5,7 @@
 Topics Indexing
 
 ```diff
-- __JAVASCRIPT__
+- JAVASCRIPT
 ```
 
 
