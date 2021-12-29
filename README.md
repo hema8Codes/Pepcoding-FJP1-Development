@@ -23,10 +23,10 @@ Lecture_29    | Folder Creation, Writing PDF
 Lecture_30    | Writing PDF, Timer
 Lecture_31_32 | Cricinfo Webscrapper Activity 1
 Lecture_33    | Hackerrank Automation Activity 2
-Lecture_34    | Content Cell
-Lecture_35    | Content Cell
-Lecture_36    | Content Cell
-Lecture_37    | Content Cell
-Lecture_      | Content Cell
+Lecture_34    | Array map(), Custom map()
+Lecture_35    | Array filter(), Custom Filter(), map() v/s filter(), map() and filter()
+Lecture_36    | Array some(), every(), find(), findIndex()
+Lecture_37    | Array reduce(), Custom reduce(), Searching, Sorting, concat and join
+Lecture_38    | Array push(), pop(), unshift(), shift(), slice(), splice()
 Lecture_      | Content Cell
 Lecture_      | Content Cell
