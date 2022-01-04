@@ -28,5 +28,5 @@ Lecture_35    | Array filter(), Custom Filter(), map() v/s filter(), map() and f
 Lecture_36    | Array some(), every(), find(), findIndex()
 Lecture_37    | Array reduce(), Custom reduce(), Searching, Sorting, concat and join
 Lecture_38    | Array push(), pop(), unshift(), shift(), slice(), splice()
-Lecture_      | Content Cell
+Lecture_39    | Array Flat(), Custom flat(), of(), from(), fill(), copyWithin()
 Lecture_      | Content Cell
