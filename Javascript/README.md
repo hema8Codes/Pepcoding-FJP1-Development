@@ -20,6 +20,11 @@ Lecture_36    | Array some(), every(), find(), findIndex()
 Lecture_37    | Array reduce(), Custom reduce(), Searching, Sorting, concat and join
 Lecture_38    | Array push(), pop(), unshift(), shift(), slice(), splice()
 Lecture_39    | Array Flat(), Custom flat(), of(), from(), fill(), copyWithin()
+Lecture_40    | Introduction to function, Hoisting, Function is variable, Types of Functions 
+Lecture_      | Content Cell
+Lecture_      | Content Cell
+Lecture_      | Content Cell
+Lecture_      | Content Cell
 Lecture_      | Content Cell
 Lecture_      | Content Cell
 Lecture_      | Content Cell
