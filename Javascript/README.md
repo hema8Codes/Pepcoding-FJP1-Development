@@ -22,7 +22,7 @@ Lecture_38    | Array push(), pop(), unshift(), shift(), slice(), splice()
 Lecture_39    | Array Flat(), Custom flat(), of(), from(), fill(), copyWithin()
 Lecture_40    | Introduction to function, Hoisting, Function is variable, Types of Functions 
 Lecture_41    | Function arguments, Execution Context, Var, Let, Const
-Lecture_      | Content Cell
+Lecture_42    | Function and Closures
 Lecture_      | Content Cell
 Lecture_      | Content Cell
 Lecture_      | Content Cell
