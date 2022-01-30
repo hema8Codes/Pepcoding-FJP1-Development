@@ -33,7 +33,7 @@ Lecture_40    | Introduction to function, Hoisting, Function is variable, Types 
 Lecture_41    | Function arguments, Execution Context, Var, Let, Const
 Lecture_42    | Function and Closures
 Lecture_43    | Function Declaration, Function Expression, Bind(), Call(), Apply()
-Lecture_      | Content Cell
-Lecture_      | Content Cell
+Lecture_44    | IIFE, closure ques, callback
+Lecture_45    | callback, this
 Lecture_      | Content Cell
 Lecture_      | Content Cell
