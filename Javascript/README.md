@@ -26,5 +26,4 @@ Lecture_42    | Function and Closures
 Lecture_43    | Function Declaration, Function Expression, Bind(), Call(), Apply()
 Lecture_44    | IIFE, closure ques, callback
 Lecture_45    | callback, this
-Lecture_      | Content Cell
-Lecture_      | Content Cell
+
