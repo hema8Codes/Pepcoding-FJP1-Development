@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>First hands at frontend</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <button id="btnAddFolder"><i class="fas fa-plus"></i>  Add Folder</button>
+    <div id="divBreadCrumb">
+        <a class="path" fid="-1">Root</a>
+    </div>
+    <div id="divContainer"></div>
+
+    <template id="pageTemplates">
+        <div class="folder">
+            <span action="edit" class="tool"><i class="fas fa-edit"></i></span>
+            <span action="delete" class="tool"><i class="fas fa-trash-alt"></i></span>
+            <span action="view" class="tool"><i class="fa fa-eye"></i></span>
+            <div purpose="name"></div>
+        </div>
+        <a class="path">Root</a>
+    </template>
+
+    <script type="text/javascript" src="main.js">
+    </script>
+</body>
+
+</html> 

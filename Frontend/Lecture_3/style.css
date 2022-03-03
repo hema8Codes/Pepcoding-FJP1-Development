@@ -1,0 +1,53 @@
+    #btnAddFolder {
+        border: none;
+        border-radius: 8px;
+        background-color: rgb(86, 255, 94);
+        width: 200px;
+        margin-left: 600px;
+        padding: 20px;
+        cursor: pointer;
+        color: rgb(20, 90, 9);
+        font-size: large;
+        font-weight: bold;
+    }
+    
+    #btnAddFolder:hover {
+        transform: scale(1.02);
+    }
+    
+    #divContainer {
+        border: 1px solid black;
+        /* padding: 10px; */
+        margin-top: 15px;
+        display: flex;
+    }
+    
+    .folder {
+        background-color: rgba(39, 205, 246, 0.938);
+        /* border: 0.1rem black solid; */
+        border-radius: 10px;
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 0.5px 0.5px 8px 3px rgb(16, 107, 211);
+    }
+    
+    .folder [action] {
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
+    }
+    
+    .tool {
+        padding: 5px;
+        color: rgb(17, 50, 238);
+    }
+    
+    div[purpose=name] {
+        margin-top: 50px;
+        color: rgb(22, 40, 200);
+        font-size: 19;
+        margin-left: 7px;
+    }
