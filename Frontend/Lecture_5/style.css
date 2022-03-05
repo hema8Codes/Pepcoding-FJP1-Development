@@ -1,0 +1,151 @@
+#header {
+    border: 4px dotted rgb(28, 42, 224);
+    margin: 10px;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+#header button {
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#header button:hover {
+    transform: scale(1.05);
+    background-color: rgb(29, 126, 190);
+    color: rgb(113, 247, 251);
+}
+
+#addFolder,
+#addTextFile {
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(57, 243, 67);
+    width: 200px;
+    margin-left: 600px;
+    padding: 20px;
+    cursor: pointer;
+    color: rgb(24, 110, 11);
+    font-size: large;
+    font-weight: bold;
+}
+
+#addFolder:hover {
+    transform: scale(1.02);
+}
+
+#breadCrumb {
+    border: 4px solid rgb(29, 72, 214);
+    margin: 10px;
+    display: flex;
+    border-radius: 6px;
+}
+
+#breadCrumb a {
+    background-color: rgb(59, 220, 248);
+    cursor: pointer;
+    font-size: 20px;
+    padding: 12px;
+    border-right: 4px solid rgb(12, 83, 236);
+}
+
+#breadCrumb a:hover {
+    background-color: rgb(154, 248, 116);
+    color: #1612df;
+}
+
+#container {
+    border: 4px solid rgb(20, 49, 218);
+    margin: 10px;
+    padding: 12px;
+    display: flex;
+    border-radius: 6px;
+}
+
+#app {
+    border: 4px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+
+/* Folder */
+
+.folder {
+    background-color: rgba(39, 205, 246, 0.938);
+    /* border: 0.1rem black solid; */
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0.5px 0.5px 8px 3px rgb(16, 107, 211);
+}
+
+.folder [action] {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.2rem;
+    /* margin-left: 0.5rem; */
+}
+
+.folder [action]:hover {
+    color: rgb(50, 83, 192);
+    transform: scale(2);
+}
+
+.tool {
+    padding: 5px;
+    color: rgb(17, 50, 238);
+}
+
+.folder div[purpose=name] {
+    margin-top: 50px;
+    color: rgb(22, 40, 200);
+    font-size: 19;
+    margin-left: 7px;
+}
+
+
+/* Text - File */
+
+.text-file {
+    background-color: rgba(161, 128, 223, 0.938);
+    /* border: 0.1rem black solid; */
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0.5px 0.5px 8px 3px rgb(112, 6, 173);
+}
+
+.text-file [action] {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.2rem;
+    /* margin-left: 0.5rem; */
+}
+
+.text-file [action]:hover {
+    color: rgb(144, 18, 175);
+    transform: scale(2);
+}
+
+.text-tool {
+    padding: 5px;
+    color: rgb(93, 7, 114);
+}
+
+.text-file div[purpose=name] {
+    margin-top: 50px;
+    color: rgb(63, 12, 87);
+    font-size: 19;
+    margin-left: 7px;
+}

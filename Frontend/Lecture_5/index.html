@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>First hands at frontend</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="header">
+        <button id="addFolder"><i class="fas fa-plus"></i>  Add Folder</button>
+        <button id="addTextFile"><i class="fas fa-plus"></i>  Add Text File</button>
+    </div>
+    <div id="breadCrumb">
+        <a purpose="path" rid="-1">Root</a>
+        <!-- <h1>This is the bread crumb</h1> -->
+    </div>
+    <div id="container">
+    </div>
+
+    <div id="app">
+        <h1>this is the area where app will show itself on a popup</h1>
+    </div>
+
+    <template id="templates">
+        <div class="folder" rid="" pid="">
+            <span action="rename" class="tool"><i class="fas fa-edit"></i></span>
+            <span action="delete" class="tool"><i class="fas fa-trash-alt"></i></span>
+            <span action="view" class="tool"><i class="fa fa-eye"></i></span>
+            <div purpose="name"></div>
+        </div>
+        <div class="text-file" rid="" pid="">
+            <span action="rename" class="text-tool"><i class="fas fa-edit"></i></span>
+            <span action="delete" class="text-tool"><i class="fas fa-trash-alt"></i></span>
+            <span action="view" class="text-tool"><i class="fa fa-eye"></i></span>
+            <div purpose="name"></div>
+        </div>
+        <a purpose="path" rid="-1">Root</a>
+    </template>
+
+    <script type="text/javascript" src="main.js">
+    </script>
+</body>
+
+</html> 
