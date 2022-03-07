@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>First hands at frontend</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="header">
+        <button id="addFolder"><i class="fas fa-plus"></i>  Add Folder</button>
+        <button id="addTextFile"><i class="fas fa-plus"></i>  Add Text File</button>
+    </div>
+
+    <div id="breadCrumb">
+        <a purpose="path" rid="-1">Root</a>
+    </div>
+
+    <div id="container">
+    </div>
+
+    <div id="app">
+        <div id="app-title-bar">
+            <div id="app-title" class="app-title-text">Title will come here</div>
+            <div id="win-actions">
+                <span class="material-icons">remove</span>
+                <span class="material-icons">fullscreen</span>
+                <span class="material-icons">close</span>
+            </div>
+        </div>
+        <div id="app-menu-bar"> </div>
+        <div id="app-body"></div>
+    </div>
+
+    <template id="templates">
+        <div class="folder" rid="" pid="">
+            <span action="rename" class="tool"><i class="fas fa-edit"></i></span>
+                <span action="delete" class="tool"><i class="fas fa-trash-alt"></i></span>
+                <span action="view" class="tool"><i class="fa fa-eye"></i></span>
+                <div purpose="name"></div>
+            </div>
+            <div class="text-file" rid="" pid="">
+                <span action="rename" class="text-tool"><i class="fas fa-edit"></i></span>
+                <span action="delete" class="text-tool"><i class="fas fa-trash-alt"></i></span>
+                <span action="view" class="text-tool"><i class="fa fa-eye"></i></span>
+                <div purpose="name"></div>
+            </div>
+            <a purpose="path" rid="-1">Root</a>
+            <div purpose="notepad-menu" class="notepad-menu">
+                <span action="save" class="material-icons">save</span>
+                <span pressed="false" action="bold" class="material-icons">format_bold</span>
+                <span pressed="false" action="italic" class="material-icons">format_italic</span>
+                <span pressed="false" action="underline" class="material-icons">format_underline</span>
+                <input type="color" action="bg-color" />
+                <input type="color" action="fg-color" />
+                <select action="font-family">
+                    <option value="monospace">monospace</option>
+                    <option value="serif">serif</option>
+                    <option value="sans-serif">sans-serif</option>
+                    <option value="cursive">cursive</option>
+                </select>
+                <select action="font-size">
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="14">14</option>
+                    <option value="16">16</option>
+                    <option value="18">18</option>
+                    <option value="20">20</option>
+                    <option value="22">22</option>
+                </select>
+
+            </div>
+            <div purpose="notepad-body" class="notepad-body">
+              <textarea>I am the notepad's body</textarea>
+            </div>
+            </template>
+
+    <script type="text/javascript" src="main.js">
+    </script>
+</body>
+
+</html> 
