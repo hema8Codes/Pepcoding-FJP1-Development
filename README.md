@@ -16,6 +16,7 @@ Lecture_3     | revision
 Lecture_4     | view, navigation
 Lecture_5     | revision, clean code, add text file
 Lecture_6     | added new features for text file
+Lecture_7     | added album
 
 
 ```diff
